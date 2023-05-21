@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+      }
+
+      .main-img:hover {
+        animation-duration: 0.5s;
+        animation-name: growup;
+        animation-fill-mode: forwards;
+      }
+      @keyframes growup {
+        from {
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+        }
+        to {
+          height: 500px;
+          width: 500px;
+          border-radius: 50px;
+        }
+      }
+      .background {
+        position: absolute;
+        border-radius: 100px;
+        width: 500px;
+        height: 500px;
+        background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxOTExMjdfMTcy/MDAxNTc0ODM0NTE3Njc3.t-9yzbFsB_WUGJ4I9O3TKaVSkB-iIfgOZ5Zg2E1tgp4g.ZZBDBjF-c8EFP_GKOgGEpQGY7mkxEP2fDTrN0J6gQCQg.JPEG.sejong_story/920_BLG_201911191220194712.jpg?type=w800);
+        background-repeat: no-repeat;
+      }
+      .mol:hover {
+        width: 300px;
+        height: 300px;
+        border: 1px solid green;
+      }
+      .mollu:active {
+        width: 300px;
+        height: 300px;
+        border: 1px dashed red;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="main-img"
+      src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjdfMTcy/MDAxNTc0ODM0NTE3Njc3.t-9yzbFsB_WUGJ4I9O3TKaVSkB-iIfgOZ5Zg2E1tgp4g.ZZBDBjF-c8EFP_GKOgGEpQGY7mkxEP2fDTrN0J6gQCQg.JPEG.sejong_story/920_BLG_201911191220194712.jpg?type=w800"
+      alt=""
+    />
+    <div class="background"></div>
+    <div class="mol">hi</div>
+    <div class="mollu">hi</div>
+  </body>
+</html>

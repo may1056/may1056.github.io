@@ -9,6 +9,8 @@
     <!DOCTYPE html>
     <html lang="en">
       <head>
+        <link rel="stylesheet" href="./indexstyle.css" type="text/css" />
+
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,73 +21,37 @@
           href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
           rel="stylesheet"
         />
-
-        <style>
-          .main-img {
-            position: relative;
-            border-bottom: 20px;
-            height: 100px;
-            width: 100px;
-            border-radius: 50px;
-          }
-          .main-img:hover {
-            animation-duration: 0.5s;
-            animation-name: growup;
-            animation-fill-mode: forwards;
-          }
-          @keyframes growup {
-            from {
-              height: 100px;
-              width: 100px;
-              border-radius: 50px;
-            }
-            to {
-              height: 500px;
-              width: 500px;
-              border-radius: 50px;
-            }
-          }
-          .mol:hover {
-            width: 300px;
-            height: 300px;
-            border: 1px solid green;
-          }
-          .mollu:active {
-            width: 300px;
-            height: 300px;
-            border: 1px dashed red;
-          }
-
-          .buttons {
-            float: left;
-          }
-
-          .jbutton {
-            width: 100px;
-            height: 100px;
-            font-size: 20px;
-            font-family: "Gowun Dodum";
-          }
-        </style>
       </head>
       <body>
-        <img
-          class="main-img"
-          src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjdfMTcy/MDAxNTc0ODM0NTE3Njc3.t-9yzbFsB_WUGJ4I9O3TKaVSkB-iIfgOZ5Zg2E1tgp4g.ZZBDBjF-c8EFP_GKOgGEpQGY7mkxEP2fDTrN0J6gQCQg.JPEG.sejong_story/920_BLG_201911191220194712.jpg?type=w800"
-          alt=""
-        />
-        <div class="mol">hi</div>
-        <div class="mollu">hi</div>
+        <a href="t.html">
+          <img
+            class="main-img"
+            src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMjdfMTcy/MDAxNTc0ODM0NTE3Njc3.t-9yzbFsB_WUGJ4I9O3TKaVSkB-iIfgOZ5Zg2E1tgp4g.ZZBDBjF-c8EFP_GKOgGEpQGY7mkxEP2fDTrN0J6gQCQg.JPEG.sejong_story/920_BLG_201911191220194712.jpg?type=w800"
+            alt=""
+          />
+        </a>
 
-        <hr />
-
-        <div class="buttons">
+        <div class="topmenu">
+          <a class="hyperlink" href="https://www.naver.com/"
+            >네이버로 가실래요?</a
+          >
           <button class="jbutton">버튼1</button>
           <button class="jbutton">버튼2</button>
           <button class="jbutton">버튼3</button>
           <button class="jbutton" ; onclick="location.href='here.html'">
             이동
           </button>
+        </div>
+
+        <hr / style="clear: both;">
+
+        <div class="maincontent">
+          <div style="font-size: 50px; font-family: Gowun Dodum">
+            무엇을 제공하나요?
+          </div>
+          <div style="font-size: 20px; font-family: Gowun Dodum">
+            저희는 아무것도 드리지 않습니다. 그저, 전통시장의 정보를 드려요!
+          </div>
         </div>
       </body>
     </html>
