@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "open Sans", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+
+  padding-left: 0px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+  align-items: center;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0px 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.navbar__menu__item:hover {
+  background-color: rgb(255, 96, 136);
+  border-radius: 5px;
+}
+
+#home {
+  padding: 40px;
+  text-align: center;
+  background: url("./medea/cat.jpg") center/cover no-repeat;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
