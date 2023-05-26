@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-body {
-  /*ackground-image: url(https://i.namu.wiki/i/XsVTENU00suRSYjyf88iPIdj59sE96TK4p91_9qcKLmsLi6SoKeCrsyo5ee_1EVSTIu2FZXNQtPIAVKf6Doaig.webp);*/
-  background-color: rgb(114, 114, 114);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: auto;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -81,9 +71,11 @@ body {
   background-color: rgb(147, 159, 120);
 }
 
-.maincontent {
-  /*background-color: rgba(22, 20, 20, 0.922);*/
-  border-radius: 5px;
-  position: relative;
-  top: 180px;
+.what {
+  font-family: "Gowun Dodum";
+}
+
+.what > div {
+  width: 500px;
+  height: 300px;
 }
