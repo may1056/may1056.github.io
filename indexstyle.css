@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 body {
-  background-image: url(https://i.namu.wiki/i/XsVTENU00suRSYjyf88iPIdj59sE96TK4p91_9qcKLmsLi6SoKeCrsyo5ee_1EVSTIu2FZXNQtPIAVKf6Doaig.webp);
+  /*ackground-image: url(https://i.namu.wiki/i/XsVTENU00suRSYjyf88iPIdj59sE96TK4p91_9qcKLmsLi6SoKeCrsyo5ee_1EVSTIu2FZXNQtPIAVKf6Doaig.webp);*/
+  background-color: rgb(114, 114, 114); 
   background-repeat: no-repeat;
   background-size: contain;
-  height: 8000px;
+  height: auto;
   animation-name: fade;
   animation-duration: 2s;
 }
@@ -22,7 +23,7 @@ body {
   position: relative;
   border-bottom: 20px;
   height: 100px;
-  width: 100px;
+  width: 150px;
   border-radius: 50px;
 }
 
@@ -36,12 +37,12 @@ body {
 @keyframes growup {
   from {
     height: 100px;
-    width: 100px;
+    width: 150px;
     border-radius: 50px;
   }
   to {
     height: 200px;
-    width: 200px;
+    width: 300px;
     border-radius: 50px;
   }
 }
@@ -81,10 +82,8 @@ body {
 }
 
 .maincontent {
-  background-color: rgba(22, 20, 20, 0.922);
+  /*background-color: rgba(22, 20, 20, 0.922);*/
   border-radius: 5px;
-}
-
-.maincontent > div {
-  color: white;
+  position: relative;
+  top:  180px;
 }
