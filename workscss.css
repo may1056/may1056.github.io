@@ -1,5 +1,20 @@
 @charset "utf-8";
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Gowun Dodum";
+
+  background-color: rgb(90, 71, 190);
+  background-size: cover;
+  height: auto;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -10,65 +25,44 @@
 }
 
 .main-img {
-  position: relative;
+  position: absolute;
+  left: 10px;
   border-bottom: 20px;
   height: 100px;
   width: 150px;
   border-radius: 50px;
 }
 
-.main-img:active {
-}
-.main-img:hover {
-  animation-duration: 0.5s;
-  animation-name: growup;
-  animation-fill-mode: forwards;
-}
-@keyframes growup {
-  from {
-    height: 100px;
-    width: 150px;
-    border-radius: 50px;
-  }
-  to {
-    height: 200px;
-    width: 300px;
-    border-radius: 50px;
-  }
-}
 .topmenu {
-  float: right;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 0px;
 
-  background-color: rgba(217, 255, 140, 0.823);
+  background-color: rgba(60, 34, 165, 0.823);
   border-radius: 10px;
 }
 
-.hyperlink {
-  width: 100px;
-  height: 100px;
-  font-size: 20px;
-  font-family: "Gowun Dodum";
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .jbutton {
-  position: relative;
+  margin-right: 20px;
+
   border-radius: 20px;
   border: none;
-  background-color: rgb(236, 255, 193);
+  background-color: rgb(196, 174, 255);
 
   /* padding은 안쪽 margin이 바깥, border는 테두리 */
   width: 100px;
   height: 100px;
   font-size: 20px;
   font-family: "Gowun Dodum";
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .jbutton:hover {
-  background-color: rgb(147, 159, 120);
+  background-color: rgb(143, 104, 250);
+}
+
+.content {
+  align-items: center;
+  text-align: center;
 }
 
 .what {
